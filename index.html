@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Landing Page</title>
+    <script defer src="js/index.js"></script>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+      <!--navigation bar-->
+    <div class="nav-bar">
+      <!--view past entries-->
+      <a href="entries-collection.html" class="display-past-entry">
+        <button class="button-container">
+          <i class="fa-solid fa-cloud fa-2x" alt="cloud icon"></i>
+          <p class="button-label">Past Entries</p>
+        </button>
+      </a>
+
+      <!--add new entry-->
+      <a href="add-new-entry.html" class="add-new-entry">
+        <button class="button-container">
+          <i class="fa-solid fa-plus fa-2x" alt="plus icon"></i>
+          <p class="button-label">New Entry</p>
+        </button>
+      </a>
+    </div>
+
+    <h1 class="main-title">Good Things, Happy Things</h1>
+    <h2 id="current-date">MM/DD/YYYY</h2>
+
+    <!--DIVIDER: Designing the pop up-->
+    
+    <div id="center-open">
+      <button class="button-container" id="open">Click To Open A Past Memory</button>
+    </div>
+
+
+    <div class="modal-container" id="modal_container">
+      <div class="modal">
+        <h1>Happy Things On</h1>
+        <h1 class="prev-date"></h1>
+        <p class="entry-box"></p>
+        <button id="close">
+          CLOSE & SAVE TO MEMORIES
+        </button>
+      </div>
+    </div>  
+    
+    <!--DIVIDER: Designing the pop up-->
+
+    <div class="entries-box"></div>
+  </body>
+  
+  
+</html>

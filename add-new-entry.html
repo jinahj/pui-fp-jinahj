@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <title>Add New Entry</title>
+    <script defer src="js/add-new-entry.js"></script>
+    <link rel="stylesheet" href="css/add-new-entry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+
+  <body>
+    <div class="nav-bar">
+      <!--cancel new entry-->
+      <a href="index.html" class="cancel-new-entry">
+        <button class="button-container">
+          <i class="fa-solid fa-xmark fa-2x" alt="x icon"></i>
+          <p class="button-label">CANCEL</p>
+        </button>
+      </a>
+  
+  
+      <!--submit new entry-->
+      <a href="index.html" class="submit-new-entry">
+        <button id="submit-button" class="button-container">
+          <i class="fa-solid fa-check fa-2x" alt="check icon"></i>
+          <p class="button-label">SUBMIT</p>
+        </button>
+      </a>
+    </div>
+  
+  
+    <div>
+      <h2>Good & Happy Things Today :)</h2>
+  
+      <div class="entry-container">
+        <div class="color-selector-container">
+          <p class="select-blue" onclick="clickBlue()"></p>
+          <p class="select-green" onclick="clickGreen()"></p>
+          <p class="select-yellow" onclick="clickYellow()"></p>
+          <p class="select-orange" onclick="clickOrange()"></p>
+          <p class="select-pink" onclick="clickPink()"></p>
+          <p class="select-purple" onclick="clickPurple()"></p>
+        </div>
+  
+        <textarea class="entry-box" placeholder="Start writing here!"></textarea>
+  
+      </div>
+  
+      <div class="keyword-container">
+        <h3>KEYWORD</h3>
+        <input class="keyword-entry-box" placeholder="Pick a keyword to display!"></p>
+      </div>
+    </div>
+  </body>
+
+</html>

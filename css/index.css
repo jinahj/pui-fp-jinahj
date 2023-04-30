@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;800&display=swap');
+
+
+.main-title{
+  font-size: 70px;
+  font-family: 'Inter', sans-serif;
+  text-align: center; 
+  padding-bottom: 50px; 
+}
+h1{
+  margin: 0px; 
+  font-family: 'Inter', sans-serif;
+}
+
+h2{
+  font-family: 'Inter', sans-serif;
+  font-size: 40px; 
+  text-align: center; 
+}
+
+h3{
+  font-family: 'Inter', sans-serif;
+  font-size: 20px; 
+  text-align: center; 
+}
+
+button:hover{
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.add-new-entry{
+  margin-top: 50px; 
+  height: 60px; 
+  color: black; 
+  text-decoration: none;
+}
+
+.nav-bar{
+  display: flex; 
+  height: 200px; 
+  gap: 50%; 
+  justify-content: center; 
+}
+
+.button-container{
+  justify-content: center; 
+  width: 240px; 
+  display: flex; 
+  border-radius: 30px; 
+  border: 4px solid black;
+  align-items: center; 
+  padding-left: 10px; 
+  padding-right: 10px; 
+  background-color: #ffae42; 
+}
+
+.button-label{
+  font-size: 22px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800; 
+}
+
+.fa-plus{
+  padding-right: 10px; 
+}
+
+.fa-cloud{
+  padding-right: 10px; 
+}
+
+.entries-box{
+  border: 5px solid black;
+  margin-top: 10px; 
+  margin-left: 200px; 
+  margin-right: 200px; 
+  border-radius: 40px; 
+  padding: 50px; 
+}
+
+.display-past-entry{
+  margin-top: 50px; 
+  height: 60px; 
+  color: black; 
+  text-decoration: none;
+}
+
+.entry-circle{
+  height: 80px;
+  width: 80px;
+  background-color: #AFCBFF;
+  border: 5px solid black;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/*----------------------------------------------------------------------------*/
+
+#open {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  font-weight: 800; 
+  width: 390px; 
+  margin: 0px; 
+  height: 80px;
+}
+
+
+#center-open{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  padding-top: 50px; 
+}
+
+.modal-container {
+  background-color: rgba(0, 0, 0, 0.3); 
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+  height: 100vh; 
+  width: 100vw; 
+  
+  display: flex; 
+  align-items: center;
+  justify-content: center; 
+  position: fixed; 
+  
+  opacity: 0; 
+  /* hide the modal */ 
+  
+  pointer-events: none; 
+  /* make the button clickable */ 
+  
+  transition: opacity 0.3s ease; 
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1; 
+}
+
+.modal {
+  background-color: #fff; 
+  padding: 30px 50px; 
+  border-radius: 15px; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); 
+  text-align: center; 
+  width: 600px; 
+  max-width: 100%; 
+  
+  /* max-width: 100% makes sure the modal is kept inside the browser width */ 
+}
+
+.modal h1 {
+  margin: 0; 
+}
+
+.modal p {
+  font-size: 14px; 
+  opacity: 0.7px; 
+}
+
+.entry-box{
+  border: 4px solid black;
+  margin-left: 2%; 
+  border-radius: 30px; 
+  font-family: 'Inter', sans-serif;
+  padding: 30px; 
+  background-color: #AFCBFF;
+  opacity: 0.7;
+  width: 510px; 
+  max-width: 100%; 
+}
+
+#close{
+  border-radius: 15px; 
+  border: 4px solid black;
+  padding-left: 10px; 
+  padding-right: 10px; 
+  background-color: #ffae42; 
+  height: 40px; 
+  font-family: 'Inter', sans-serif; 
+  font-weight: bold; 
+}
