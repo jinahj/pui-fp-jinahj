@@ -22,6 +22,11 @@ if (localStorage.getItem('openedEntries') != null){
 
     // associate a value as an attribute
     para.setAttribute('value',currIndex);
+    
+    // when this new element is clicked, it should show the respective entry associated to the keyword box 
+    
+    para.classList.add("btn"); 
+    para.setAttribute('onclick', "openPopup()"); 
     currIndex++; 
   
     const containerElem = document.querySelector(".entries-box"); 
@@ -29,4 +34,14 @@ if (localStorage.getItem('openedEntries') != null){
   }
 }
 
-// for modal 
+// for pop up
+
+let popup = document.getElementById("popup"); 
+
+function openPopup(){
+  popup.classList.add('open-popup');
+}
+ 
+function closePopup(){
+  popup.classList.remove('open-popup');
+}
