@@ -171,10 +171,13 @@ function alertMessage(){
     message.textContent = "There are no more entries to open. Add new good & happy things!"; 
     entriesBox.appendChild(message); 
 
+    let buttonLabel = document.querySelector("#open"); 
+    buttonLabel.innerText = "No Past Memories To Open"; 
   }
 }
 
 alertMessage(); 
+
 
 
 

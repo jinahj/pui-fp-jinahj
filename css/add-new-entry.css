@@ -4,6 +4,10 @@
   background-color: #eff8e2; 
 }
 
+.error-class::-webkit-input-placeholder {
+  color: red; 
+}
+
 h2{
   font-size: 70px;
   font-family: 'Inter', sans-serif;
@@ -72,7 +76,7 @@ button:hover{
 
 #add-test-entries{
   background-color: rgba(255, 0, 0, 0.8); 
-  width: 30%; 
+  width: 35%; 
   height: 80px; 
   margin-left: 2%; 
   border-radius: 27px; 
@@ -97,13 +101,19 @@ button:hover{
   margin-bottom: 2%; 
 }
 
+/* color selector opacity id */
+
+.de-selected{
+  opacity: 0.5; 
+}
+
 .select-blue{
   height: 40px;
   width: 40px;
   background-color: #AFCBFF;
   border-radius: 50%;
   border: 3px solid black;
-  opacity: 1; 
+  cursor: pointer; 
 }
 
 .select-blue:hover{
@@ -117,7 +127,7 @@ button:hover{
   background-color: #DBFFD6;
   border-radius: 50%;
   border: 3px solid black;
-  opacity: 0.5; 
+  cursor: pointer; 
 }
 
 .select-green:hover{
@@ -130,7 +140,7 @@ button:hover{
   background-color: #FFFFD1; 
   border-radius: 50%;
   border: 3px solid black;
-  opacity: 0.5; 
+  cursor: pointer; 
 }
 
 .select-yellow:hover{
@@ -143,7 +153,7 @@ button:hover{
   background-color: #FFBEBC; 
   border-radius: 50%;
   border: 3px solid black;
-  opacity: 0.5; 
+  cursor: pointer; 
 }
 
 .select-orange:hover{
@@ -156,7 +166,7 @@ button:hover{
   background-color: #FFB5E8; 
   border-radius: 50%;
   border: 3px solid black;
-  opacity: 0.5; 
+  cursor: pointer; 
 }
 
 .select-pink:hover{
@@ -168,8 +178,8 @@ button:hover{
   width: 40px;
   background-color: #ECD4FF;
   border-radius: 50%;
-  border: 3px solid black;
-  opacity: 0.5; 
+  border: 3px solid black; 
+  cursor: pointer; 
 }
 
 .select-purple:hover{

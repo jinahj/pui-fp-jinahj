@@ -23,14 +23,6 @@ if (localStorage.getItem('openedEntries') != null){
     // associate a value as an attribute
     para.setAttribute('value',currIndex);
     currIndex++; 
-
-    const numChar = (entryData.keyword).length; 
-    const calcWidth = numChar*10; 
-    para.style.width = `${calcWidth}px`
-
-    if ((entryData.keyword).length < 20){
-      para.style.paddingRight = "10px"; 
-    }
   
     const containerElem = document.querySelector(".entries-box"); 
     containerElem.appendChild(para); 

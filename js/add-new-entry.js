@@ -1,28 +1,17 @@
-
-function resetAll(){
+function clickBlue(){
   let blue = document.querySelector('.select-blue');
   let green = document.querySelector('.select-green');
   let yellow = document.querySelector('.select-yellow');
   let orange = document.querySelector('.select-orange');
   let pink = document.querySelector('.select-pink');
-  let purple = document.querySelector('.select-purple');
-  blue.style.opacity = 0.5;
-  green.style.opacity = 0.5;
-  yellow.style.opacity = 0.5;
-  orange.style.opacity = 0.5;
-  pink.style.opacity = 0.5;
-  purple.style.opacity = 0.5; 
+  let purple = document.querySelector('.select-purple'); 
 
-  let entryContainer = document.querySelector('.entry-box'); 
-  let keywordContainer = document.querySelector('.keyword-entry-box'); 
-  entryContainer.style.backgroundColor = "white"; 
-  keywordContainer.style.backgroundColor = "white"; 
-}
-
-function clickBlue(){
-  resetAll(); 
-  let blue = document.querySelector('.select-blue');
-  blue.style.opacity = 1;
+  blue.classList.remove('de-selected'); 
+  green.classList.add('de-selected'); 
+  yellow.classList.add('de-selected'); 
+  orange.classList.add('de-selected'); 
+  pink.classList.add('de-selected'); 
+  purple.classList.add('de-selected'); 
 
   let entryContainer = document.querySelector('.entry-box'); 
   let keywordContainer = document.querySelector('.keyword-entry-box'); 
@@ -31,9 +20,19 @@ function clickBlue(){
 }
 
 function clickGreen(){
-  resetAll(); 
+  let blue = document.querySelector('.select-blue');
   let green = document.querySelector('.select-green');
-  green.style.opacity = 1;
+  let yellow = document.querySelector('.select-yellow');
+  let orange = document.querySelector('.select-orange');
+  let pink = document.querySelector('.select-pink');
+  let purple = document.querySelector('.select-purple'); 
+
+  blue.classList.add('de-selected'); 
+  green.classList.remove('de-selected'); 
+  yellow.classList.add('de-selected'); 
+  orange.classList.add('de-selected'); 
+  pink.classList.add('de-selected'); 
+  purple.classList.add('de-selected'); 
 
   let entryContainer = document.querySelector('.entry-box'); 
   let keywordContainer = document.querySelector('.keyword-entry-box'); 
@@ -42,9 +41,19 @@ function clickGreen(){
 }
 
 function clickYellow(){
-  resetAll();
+  let blue = document.querySelector('.select-blue');
+  let green = document.querySelector('.select-green');
   let yellow = document.querySelector('.select-yellow');
-  yellow.style.opacity = 1;
+  let orange = document.querySelector('.select-orange');
+  let pink = document.querySelector('.select-pink');
+  let purple = document.querySelector('.select-purple'); 
+
+  blue.classList.add('de-selected'); 
+  green.classList.add('de-selected'); 
+  yellow.classList.remove('de-selected'); 
+  orange.classList.add('de-selected'); 
+  pink.classList.add('de-selected'); 
+  purple.classList.add('de-selected'); 
 
   let entryContainer = document.querySelector('.entry-box'); 
   let keywordContainer = document.querySelector('.keyword-entry-box');
@@ -53,9 +62,19 @@ function clickYellow(){
 }
 
 function clickOrange(){
-  resetAll(); 
+  let blue = document.querySelector('.select-blue');
+  let green = document.querySelector('.select-green');
+  let yellow = document.querySelector('.select-yellow');
   let orange = document.querySelector('.select-orange');
-  orange.style.opacity = 1;
+  let pink = document.querySelector('.select-pink');
+  let purple = document.querySelector('.select-purple'); 
+
+  blue.classList.add('de-selected'); 
+  green.classList.add('de-selected'); 
+  yellow.classList.add('de-selected'); 
+  orange.classList.remove('de-selected'); 
+  pink.classList.add('de-selected'); 
+  purple.classList.add('de-selected'); 
 
   let entryContainer = document.querySelector('.entry-box'); 
   let keywordContainer = document.querySelector('.keyword-entry-box'); 
@@ -64,9 +83,19 @@ function clickOrange(){
 }
 
 function clickPink(){
-  resetAll(); 
+  let blue = document.querySelector('.select-blue');
+  let green = document.querySelector('.select-green');
+  let yellow = document.querySelector('.select-yellow');
+  let orange = document.querySelector('.select-orange');
   let pink = document.querySelector('.select-pink');
-  pink.style.opacity = 1;
+  let purple = document.querySelector('.select-purple'); 
+
+  blue.classList.add('de-selected'); 
+  green.classList.add('de-selected'); 
+  yellow.classList.add('de-selected'); 
+  orange.classList.add('de-selected'); 
+  pink.classList.remove('de-selected'); 
+  purple.classList.add('de-selected'); 
 
   let entryContainer = document.querySelector('.entry-box'); 
   let keywordContainer = document.querySelector('.keyword-entry-box'); 
@@ -75,9 +104,19 @@ function clickPink(){
 }
 
 function clickPurple(){
-  resetAll(); 
-  let purple = document.querySelector('.select-purple');
-  purple.style.opacity = 1;
+  let blue = document.querySelector('.select-blue');
+  let green = document.querySelector('.select-green');
+  let yellow = document.querySelector('.select-yellow');
+  let orange = document.querySelector('.select-orange');
+  let pink = document.querySelector('.select-pink');
+  let purple = document.querySelector('.select-purple'); 
+
+  blue.classList.add('de-selected'); 
+  green.classList.add('de-selected'); 
+  yellow.classList.add('de-selected'); 
+  orange.classList.add('de-selected'); 
+  pink.classList.add('de-selected'); 
+  purple.classList.remove('de-selected'); 
 
   let entryContainer = document.querySelector('.entry-box'); 
   let keywordContainer = document.querySelector('.keyword-entry-box'); 
@@ -138,6 +177,9 @@ class Entry{
 
 }
 
+
+let checkSubmission = true; 
+
 function onSelectValueChange(){
   const newEntry = new Entry(); 
 
@@ -156,19 +198,44 @@ function onSelectValueChange(){
   // content box and keyword box should not be empty when submitting
   if (newEntry.content != "" && newEntry.keyword != ""){
     allEntries.push(newEntry); 
+    checkSubmission = true; 
   }
 
-  //if content box is empty change placeholder color to red
-
-
-  //if keyword box is empty change placeholder color to red 
+  else{
+    checkSubmission = false; 
+  }
 
   console.log(allEntries);
   saveToLocalStorage(); 
 }
 
+function alterLink(){
+  var entryBox = document.querySelector(".entry-box"); 
+  var keywordBox = document.querySelector('.keyword-entry-box'); 
+  var link = document.querySelector(".submit-new-entry"); 
+
+  if ((entryBox.value != '' && keywordBox.value != '') || addingTestEntries == true){
+    link.href = "index.html"; 
+  }
+}
+
+//display error message if entry box OR keyword box NOT filled in 
+
+function errorMessage(){
+  if (checkSubmission == false && addingTestEntries == false){
+    var entryBox = document.querySelector(".entry-box"); 
+    var keywordBox = document.querySelector('.keyword-entry-box'); 
+    entryBox.placeholder = "ERROR!!! No entry :("; 
+    keywordBox.placeholder = "ERROR!!! No keyword :(";
+    entryBox.classList.add('error-class'); 
+    keywordBox.classList.add('error-class'); 
+  }
+}
+
 let addtoEntries = document.querySelector("#submit-button"); 
 addtoEntries.addEventListener("click", onSelectValueChange); 
+addtoEntries.addEventListener("click", alterLink); 
+addtoEntries.addEventListener("click", errorMessage); 
 
 /*----------------------------------------------------------------------------*/
 //create test entries for mock purposes and add to entries list
@@ -179,8 +246,10 @@ function addNewEntry(entryColor, entryContent, entryKeyword){
 }
 
 let applyTestEntriesCount = 0; 
+let addingTestEntries = false; 
 
 function addTestEntries(){
+  addingTestEntries = true;
   if (applyTestEntriesCount == 0){
     applyTestEntriesCount ++; 
 
