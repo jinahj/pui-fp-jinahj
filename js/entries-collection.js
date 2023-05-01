@@ -1,6 +1,14 @@
 // retrieve from local storage and append each imte to the DOM
 
+let count = 0;
+
 if (localStorage.getItem('openedEntries') != null){
+  const containerElem = document.querySelector(".entries-box"); 
+  containerElem.innerText = ""; 
+  count++; 
+}
+
+if (localStorage.getItem('openedEntries') != null){ 
   const entriesArrayString = localStorage.getItem('openedEntries'); 
   const entriesArray = JSON.parse(entriesArrayString); 
 
@@ -16,6 +24,5 @@ if (localStorage.getItem('openedEntries') != null){
   
     const containerElem = document.querySelector(".entries-box"); 
     containerElem.appendChild(para); 
-  }  
+  }
 }
-
