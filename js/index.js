@@ -9,8 +9,10 @@ class Entry{
     this.color = entryColor; 
     this.content = entryContent; 
     this.keyword = entryKeyword; 
+    // automatically record date
+    this.date = getDate(); 
   }
-  
+
 }
 
 function addNewEntry(noteColor, noteContent, noteKeyword){
@@ -57,8 +59,10 @@ const modal_container = document.getElementById('modal_container');
 const close = document.getElementById('close'); 
 
 open.addEventListener('click', () => {
- modal_container.classList.add('show');
- showModalEntry()
+  if (allEntries.length > 0){
+    modal_container.classList.add('show');
+    showModalEntry(); 
+  }
 }); 
 
 close.addEventListener('click', () => {
@@ -166,6 +170,7 @@ function alertMessage(){
     let message = document.createElement("h3"); 
     message.textContent = "There are no more entries to open. Add new good & happy things!"; 
     entriesBox.appendChild(message); 
+
   }
 }
 

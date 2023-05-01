@@ -1,3 +1,4 @@
+
 function resetAll(){
   let blue = document.querySelector('.select-blue');
   let green = document.querySelector('.select-green');

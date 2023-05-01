@@ -27,6 +27,10 @@ if (localStorage.getItem('openedEntries') != null){
     const numChar = (entryData.keyword).length; 
     const calcWidth = numChar*10; 
     para.style.width = `${calcWidth}px`
+
+    if ((entryData.keyword).length < 20){
+      para.style.paddingRight = "10px"; 
+    }
   
     const containerElem = document.querySelector(".entries-box"); 
     containerElem.appendChild(para); 
