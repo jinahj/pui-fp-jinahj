@@ -147,6 +147,7 @@ button:hover{
   text-align: center; 
   width: 600px; 
   max-width: 100%; 
+  font-weight: 500; 
   
   /* max-width: 100% makes sure the modal is kept inside the browser width */ 
 }

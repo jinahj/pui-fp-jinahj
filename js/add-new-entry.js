@@ -177,187 +177,193 @@ function addNewEntry(entryColor, entryContent, entryKeyword){
   allEntries.push(entry); 
 }
 
+let applyTestEntriesCount = 0; 
+
 function addTestEntries(){
-  addNewEntry(
-    "rgb(175, 203, 255)", //blue 
-    "Had breakfast sandwich from Starbucks and it was delicious!",
-    "Starbucks Breakfast Sandwich" 
-  ); 
-  
-  addNewEntry(
-    "rgb(219, 255, 214)", //green 
-    "Got over seven hours of sleep and had really good dirty chai :)",
-    "Dirty Chai" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 255, 209)", //yellow 
-    "Class ended really early and had fries 🍟",
-    "Short Class Day" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 190, 188)", //orange 
-    "Weather was sunny but breezy so I went for a walk. It really felt like spring today 🌸 Went out for dinner and got sushi 🍣 ate icecream after 🍦 Everything was super yummy. Took a hot bath to end the day 😎",
-    "Sunny Breezy Weather" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 181, 232)", //pink 
-    "Celebrated mom's birthday 🥳 We got strawberry cake and went out for a buffet 🎂 Ended the day with a movie 🍿",
-    "Mom's Birthday" 
-  ); 
-  
-  addNewEntry(
-    "rgb(236, 212, 255)", 
-    "📓 Today was such a productive day! 💪 I woke up early, went for a 🏃‍♀️ and finished a big project at work. I feel like I can take on the world. 🌎",
-    "Productive Day" 
-  ); 
-  
-  addNewEntry(
-    "rgb(236, 212, 255)", 
-    "📓 I had a job interview today, and I think it went pretty well! 🤞 Fingers crossed that I get the job. 🤞",
-    "Job Inteview Went Well" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 190, 188)",  
-    "📓 I had a great time hanging out with my friends today. We went to a new restaurant 🍴 and laughed until our stomachs hurt. 😂 It's moments like these that make life worth living.",
-    "Quality Time with Friends" 
-  ); 
-  
-  addNewEntry(
-    "rgb(219, 255, 214)",  
-    "📓 I spent the day cleaning and organizing my apartment. It feels so good to have everything in its place. 🧹🧼",
-    "New Place, Cleaning Day" 
-  ); 
-  
-  addNewEntry(
-    "rgb(175, 203, 255)",  
-    "📓 Today was my sister's birthday, so I called her to wish her a happy birthday. 🎂 I miss her so much, but I'm glad we can still keep in touch. 📞",
-    "Happy Birthday to My Sister" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 255, 209)",  
-    "📓 I tried a new hobby today and loved it! 🎨 I think I'm going to make it a regular part of my routine. 💕",
-    "New Drawing Hobby" 
-  ); 
-  
-  
-  addNewEntry(
-    "rgb(175, 203, 255)", //blue 
-    "📓 I had a really tough conversation with a friend today. 😔 It's never easy to confront someone, but I'm glad we were able to work things out. 🤝",
-    "Conversation" 
-  ); 
-  
-  addNewEntry(
-    "rgb(219, 255, 214)", 
-    "📓 I'm feeling really grateful for my family today. ❤️ They always know how to make me feel better when I'm feeling down.",
-    "Grateful for My Family" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 255, 209)", 
-    "📓 I had a great workout today 💪 and I feel so energized! 🏋️‍♀️ I love the feeling of pushing myself to my limits.",
-    "Great Workout" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 190, 188)", 
-    "📓 Today was such a beautiful day ☀️ and I took a long walk outside. 🚶‍♀️ The fresh air and sunshine always make me feel better.",
-    "Fresh Air and Sunshine" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 181, 232)", //pink 
-    "📓 I finally finished that book I've been meaning to read! 📚 It feels good to accomplish something. 🥳",
-    "Finished a Book" 
-  ); 
-  
-  addNewEntry(
-    "rgb(236, 212, 255)", 
-    "📓 I had a delicious meal today 🍲 and tried a new recipe. 🍽️ Cooking is such a relaxing and enjoyable hobby.",
-    "Should I make Cooking another Hobby?" 
-  ); 
-  
-  addNewEntry(
-    "rgb(236, 212, 255)", 
-    "📓 I got a surprise package in the mail today! 📦 It was so nice to receive something unexpected. 😍",
-    "Surprise Package" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 190, 188)",  
-    "📓 I went to a concert tonight 🎶 and had so much fun! It's been a while since I've been to a live show. 🎉",
-    "Concert" 
-  ); 
-  
-  addNewEntry(
-    "rgb(219, 255, 214)",  
-    "📓 I'm feeling really proud of myself today! 🥰 I accomplished a goal that I've been working towards for a long time. 🏆",
-    "Proud of Myself" 
-  ); 
-  
-  addNewEntry(
-    "rgb(175, 203, 255)",  
-    "📓 Today was a lazy day, but sometimes those are the best days. 😴 I spent the day watching movies and snacking on junk food. 🍿🍫",
-    "Movies and Junk Food" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 255, 209)",  
-    "📓 I went for a hike today and it was so beautiful! 🌳 Nature has a way of putting things into perspective. 🌿",
-    "Nature Hike" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 190, 188)", 
-    "📓 I got a new haircut today and I love it! 💇‍♀️ It's amazing how a small change can make such a big difference. 💇‍♀️💕",
-    "New Haircut" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 190, 188)", 
-    "📓 I had a long conversation with my mom today. 💕 She always knows how to make me feel better. 📞",
-    "Long Call with Mom" 
-  ); 
-  
-  addNewEntry(
-    "rgb(175, 203, 255)",  
-    "📓 I spent the day volunteering at a local charity. ❤️ It feels good to give back to the community. 🤝",
-    "Volunteer at Local Charity" 
-  ); 
-  
-  addNewEntry(
-    "rgb(236, 212, 255)", 
-    "📓 I'm feeling really inspired today! 🤩 I read a book that really resonated with me and it's given me a new perspective on life. 📚",
-    "INSPIRATION" 
-  ); 
-  
-  addNewEntry(
-    "rgb(175, 203, 255)", 
-    "📓 I went shopping today and found some amazing deals! 🛍️ It's always nice to treat myself to something new. 💸",
-    "Shopping" 
-  ); 
-  
-  addNewEntry(
-    "rgb(219, 255, 214)", 
-    "📓 I had a really productive day at work today. 💼 It feels good to be making progress towards my goals. 💪",
-    "Productive Day at Work" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 255, 209)",
-    "📓 I'm feeling really nostalgic today. 🤔 I've been looking through old photos and reminiscing about the good times. 📷",
-    "Nostalgia" 
-  ); 
-  
-  addNewEntry(
-    "rgb(255, 181, 232)", //pink 
-    "Went to the amusement park today! There was so many people but we still got to ride five attractions including the huge rollercoaster 🎢. We also visted the zoo inside. The pandas were super cute 🐼. Can't wait to go back 🎡",
-    "Amusement Park Trip" 
-  ); 
+  if (applyTestEntriesCount == 0){
+    applyTestEntriesCount ++; 
+
+    addNewEntry(
+      "rgb(175, 203, 255)", //blue 
+      "Had breakfast sandwich from Starbucks and it was delicious!",
+      "Starbucks Breakfast Sandwich" 
+    ); 
+    
+    addNewEntry(
+      "rgb(219, 255, 214)", //green 
+      "Got over seven hours of sleep and had really good dirty chai :)",
+      "Dirty Chai" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 255, 209)", //yellow 
+      "Class ended really early and had fries 🍟",
+      "Short Class Day" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 190, 188)", //orange 
+      "Weather was sunny but breezy so I went for a walk. It really felt like spring today 🌸 Went out for dinner and got sushi 🍣 ate icecream after 🍦 Everything was super yummy. Took a hot bath to end the day 😎",
+      "Sunny Breezy Weather" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 181, 232)", //pink 
+      "Celebrated mom's birthday 🥳 We got strawberry cake and went out for a buffet 🎂 Ended the day with a movie 🍿",
+      "Mom's Birthday" 
+    ); 
+    
+    addNewEntry(
+      "rgb(236, 212, 255)", 
+      "📓 Today was such a productive day! 💪 I woke up early, went for a 🏃‍♀️ and finished a big project at work. I feel like I can take on the world. 🌎",
+      "Productive Day" 
+    ); 
+    
+    addNewEntry(
+      "rgb(236, 212, 255)", 
+      "📓 I had a job interview today, and I think it went pretty well! 🤞 Fingers crossed that I get the job. 🤞",
+      "Job Inteview Went Well" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 190, 188)",  
+      "📓 I had a great time hanging out with my friends today. We went to a new restaurant 🍴 and laughed until our stomachs hurt. 😂 It's moments like these that make life worth living.",
+      "Quality Time with Friends" 
+    ); 
+    
+    addNewEntry(
+      "rgb(219, 255, 214)",  
+      "📓 I spent the day cleaning and organizing my apartment. It feels so good to have everything in its place. 🧹🧼",
+      "New Place, Cleaning Day" 
+    ); 
+    
+    addNewEntry(
+      "rgb(175, 203, 255)",  
+      "📓 Today was my sister's birthday, so I called her to wish her a happy birthday. 🎂 I miss her so much, but I'm glad we can still keep in touch. 📞",
+      "Happy Birthday to My Sister" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 255, 209)",  
+      "📓 I tried a new hobby today and loved it! 🎨 I think I'm going to make it a regular part of my routine. 💕",
+      "New Drawing Hobby" 
+    ); 
+    
+    
+    addNewEntry(
+      "rgb(175, 203, 255)", //blue 
+      "📓 I had a really tough conversation with a friend today. 😔 It's never easy to confront someone, but I'm glad we were able to work things out. 🤝",
+      "Conversation" 
+    ); 
+    
+    addNewEntry(
+      "rgb(219, 255, 214)", 
+      "📓 I'm feeling really grateful for my family today. ❤️ They always know how to make me feel better when I'm feeling down.",
+      "Grateful for My Family" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 255, 209)", 
+      "📓 I had a great workout today 💪 and I feel so energized! 🏋️‍♀️ I love the feeling of pushing myself to my limits.",
+      "Great Workout" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 190, 188)", 
+      "📓 Today was such a beautiful day ☀️ and I took a long walk outside. 🚶‍♀️ The fresh air and sunshine always make me feel better.",
+      "Fresh Air and Sunshine" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 181, 232)", //pink 
+      "📓 I finally finished that book I've been meaning to read! 📚 It feels good to accomplish something. 🥳",
+      "Finished a Book" 
+    ); 
+    
+    addNewEntry(
+      "rgb(236, 212, 255)", 
+      "📓 I had a delicious meal today 🍲 and tried a new recipe. 🍽️ Cooking is such a relaxing and enjoyable hobby.",
+      "Should I make Cooking another Hobby?" 
+    ); 
+    
+    addNewEntry(
+      "rgb(236, 212, 255)", 
+      "📓 I got a surprise package in the mail today! 📦 It was so nice to receive something unexpected. 😍",
+      "Surprise Package" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 190, 188)",  
+      "📓 I went to a concert tonight 🎶 and had so much fun! It's been a while since I've been to a live show. 🎉",
+      "Concert" 
+    ); 
+    
+    addNewEntry(
+      "rgb(219, 255, 214)",  
+      "📓 I'm feeling really proud of myself today! 🥰 I accomplished a goal that I've been working towards for a long time. 🏆",
+      "Proud of Myself" 
+    ); 
+    
+    addNewEntry(
+      "rgb(175, 203, 255)",  
+      "📓 Today was a lazy day, but sometimes those are the best days. 😴 I spent the day watching movies and snacking on junk food. 🍿🍫",
+      "Movies and Junk Food" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 255, 209)",  
+      "📓 I went for a hike today and it was so beautiful! 🌳 Nature has a way of putting things into perspective. 🌿",
+      "Nature Hike" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 190, 188)", 
+      "📓 I got a new haircut today and I love it! 💇‍♀️ It's amazing how a small change can make such a big difference. 💇‍♀️💕",
+      "New Haircut" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 190, 188)", 
+      "📓 I had a long conversation with my mom today. 💕 She always knows how to make me feel better. 📞",
+      "Long Call with Mom" 
+    ); 
+    
+    addNewEntry(
+      "rgb(175, 203, 255)",  
+      "📓 I spent the day volunteering at a local charity. ❤️ It feels good to give back to the community. 🤝",
+      "Volunteer at Local Charity" 
+    ); 
+    
+    addNewEntry(
+      "rgb(236, 212, 255)", 
+      "📓 I'm feeling really inspired today! 🤩 I read a book that really resonated with me and it's given me a new perspective on life. 📚",
+      "INSPIRATION" 
+    ); 
+    
+    addNewEntry(
+      "rgb(175, 203, 255)", 
+      "📓 I went shopping today and found some amazing deals! 🛍️ It's always nice to treat myself to something new. 💸",
+      "Shopping" 
+    ); 
+    
+    addNewEntry(
+      "rgb(219, 255, 214)", 
+      "📓 I had a really productive day at work today. 💼 It feels good to be making progress towards my goals. 💪",
+      "Productive Day at Work" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 255, 209)",
+      "📓 I'm feeling really nostalgic today. 🤔 I've been looking through old photos and reminiscing about the good times. 📷",
+      "Nostalgia" 
+    ); 
+    
+    addNewEntry(
+      "rgb(255, 181, 232)", //pink 
+      "Went to the amusement park today! There was so many people but we still got to ride five attractions including the huge rollercoaster 🎢. We also visted the zoo inside. The pandas were super cute 🐼. Can't wait to go back 🎡",
+      "Amusement Park Trip" 
+    ); 
+  }
 }
 
 // on click, the button should turn green to signify that the test entries were logged, and the text should change to "click submit to finalize the action"
@@ -369,7 +375,7 @@ function changeTBColor(){
   targetButton.style.backgroundColor = "#90EE90"
 
   let displayText = document.querySelector("#add-test-entries-label")
-  displayText.textContent = "Click submit to finalize action"
+  displayText.textContent = "Click Submit To Finalize Action"
 }
 
 testButton.addEventListener("click", changeTBColor); 

@@ -79,3 +79,9 @@ button:hover{
   text-decoration: none;
 }
 
+#no-past-entries{
+  font-family: 'Inter', sans-serif; 
+  text-align: center; 
+  padding-top: 35px; 
+  padding-bottom: 35px; 
+}
