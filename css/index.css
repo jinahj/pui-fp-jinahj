@@ -7,7 +7,8 @@
 }
 
 :root {
-  --color-primary: #f6aca2;
+  /* --color-primary: #f6aca2; */
+  --color-primary: black; 
   --color-secondary: #f49b90;
   --color-tertiary: #f28b7d;
   --color-quaternary: #f07a6a;
@@ -187,7 +188,7 @@ button:active{
 
 #current-date{
   background-color: #eff8e2; 
-  color:#f6aca2; 
+  color:black; 
 }
 
 .entries-box{
