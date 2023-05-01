@@ -48,7 +48,6 @@ if (localStorage.getItem('openedEntries') != null){
 }
 
 
-
 /*----------------------------------------------------------------------------*/
 
 const open = document.getElementById('open'); 
@@ -72,6 +71,8 @@ const newContainer = document.createElement('div');
 newContainer.className = "entries-box"; 
 document.body.appendChild(newContainer); 
 retrieveFromLocalStorage();
+
+alertMessage(); 
 });
 
 /* randomly choose an entry from 'entriesArray' and display it in the pop up */
@@ -159,12 +160,16 @@ displayCurrDate.textContent = getDate();
 
 // if there are no entries in the box, alert that there are no entries to display 
 
-if (allEntries.length == 0){
-  let entriesBox = document.querySelector(".entries-box"); 
-  let message = document.createElement("h3"); 
-  message.textContent = "There are no more entries to open. Add new good & happy things!"; 
-  entriesBox.appendChild(message); 
+function alertMessage(){
+  if (allEntries.length == 0){
+    let entriesBox = document.querySelector(".entries-box"); 
+    let message = document.createElement("h3"); 
+    message.textContent = "There are no more entries to open. Add new good & happy things!"; 
+    entriesBox.appendChild(message); 
+  }
 }
+
+alertMessage(); 
 
 
 

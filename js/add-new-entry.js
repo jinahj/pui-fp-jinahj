@@ -335,7 +335,7 @@ function addTestEntries(){
     ); 
     
     addNewEntry(
-      "rgb(236, 212, 255)", 
+      "rgb(236, 212, 255)",
       "📓 I'm feeling really inspired today! 🤩 I read a book that really resonated with me and it's given me a new perspective on life. 📚",
       "INSPIRATION" 
     ); 
@@ -376,6 +376,7 @@ function changeTBColor(){
 
   let displayText = document.querySelector("#add-test-entries-label")
   displayText.textContent = "Click Submit To Finalize Action"
+  displayText.style.backgroundColor = "#90EE90"; 
 }
 
 testButton.addEventListener("click", changeTBColor); 

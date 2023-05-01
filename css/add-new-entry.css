@@ -1,16 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;800&display=swap');
 
+* {
+  background-color: #eff8e2; 
+}
+
 h2{
   font-size: 70px;
   font-family: 'Inter', sans-serif;
   text-align: center; 
-  padding-left: 30px; 
+  padding-left: 30px;
+  color: #f6aca2; 
 }
 
 h3{
   text-align: center; 
   font-size: 40px;
   font-family: 'Inter', sans-serif;
+}
+
+button{
+  transition: transform 0.2s; 
+}
+
+button:active{
+  transform: scale(0.95); 
 }
 
 button:hover{
@@ -65,6 +78,10 @@ button:hover{
   font-size: 30px;
   text-align: center; 
   border-radius: 40px; 
+}
+
+#add-test-entries-label{
+  background-color: rgba(255, 0, 0, 0); 
 }
 
 
@@ -171,12 +188,15 @@ button:hover{
   padding-left: 10px; 
   padding-right: 10px; 
   background-color: #ffae42; 
+  cursor: pointer; 
+  opacity: 0.9; 
 }
 
 .button-label{
   font-size: 22px;
   font-family: 'Inter', sans-serif;
   font-weight: 800; 
+  background-color: #ffae42; 
 }
 
 .cancel-new-entry{
@@ -186,10 +206,12 @@ button:hover{
 
 .fa-xmark{
   padding-right: 10px; 
+  background-color: #ffae42; 
 }
 
 .fa-check{
   padding-right: 10px; 
+  background-color: #ffae42; 
 }
 
 .submit-new-entry{
