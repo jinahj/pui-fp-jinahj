@@ -8,13 +8,15 @@
   color: red; 
 }
 
-h2{
-  font-size: 70px;
+#entry-label{
+  display: block; 
   font-family: 'Inter', sans-serif;
+  font-size: 70px; 
+  padding: 5%; 
   text-align: center; 
-  padding-left: 30px;
-  color: black; 
 }
+
+
 
 label{
   text-align: center; 
