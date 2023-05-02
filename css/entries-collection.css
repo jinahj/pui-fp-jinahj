@@ -117,6 +117,7 @@ button:active{
   height: 60px; 
   color: black; 
   text-decoration: none;
+  margin-right: 67%; 
 }
 
 #no-past-entries{
