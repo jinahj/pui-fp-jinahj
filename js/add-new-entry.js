@@ -469,8 +469,6 @@ if (allEntries.length == 0 && localStorage.getItem('storedEntries') != null){
   }
 }
 
-allEntries = []; 
-
 
 /* 
 Citations: 
