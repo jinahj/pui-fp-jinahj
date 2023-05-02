@@ -163,6 +163,15 @@ function getDate(){
 // Create list to store all entries 
 let allEntries = []; 
 
+if (allEntries.length == 0 && localStorage.getItem('storedEntries') != null){
+  const entriesArrayString = localStorage.getItem('storedEntries');
+  const entriesArray = JSON.parse(entriesArrayString);
+  for (const entry of entriesArray){
+    allEntries.push(entry); 
+  }
+}
+
+
 // Create object for entry 
 class Entry{
   
@@ -457,14 +466,6 @@ let tempArray = [];
 function saveToLocalStorage(){
   const entriesArrayString = JSON.stringify(allEntries);
   localStorage.setItem('storedEntries', entriesArrayString); 
-}
-
-if (allEntries.length == 0 && localStorage.getItem('storedEntries') != null){
-  const entriesArrayString = localStorage.getItem('storedEntries');
-  const entriesArray = JSON.parse(entriesArrayString);
-  for (const entry of entriesArray){
-    allEntries.push(entry); 
-  }
 }
 
 /* 
