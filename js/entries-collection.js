@@ -69,3 +69,10 @@ const buttonPressed = e => {
 for (let button of buttons){
   button.addEventListener('click', buttonPressed); 
 }
+
+/* 
+Citations: 
+1. https://alvarotrigo.com/blog/css-text-animations/
+2. https://www.youtube.com/watch?v=foB3Ke5LsNY
+3. https://www.youtube.com/watch?v=XH5OW46yO8I&t=69s
+*/ 

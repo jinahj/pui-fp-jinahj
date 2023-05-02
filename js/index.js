@@ -179,6 +179,13 @@ function alertMessage(){
 alertMessage(); 
 
 
+/* 
+Citations: 
+1. https://alvarotrigo.com/blog/css-text-animations/
+2. https://www.youtube.com/watch?v=foB3Ke5LsNY
+3. https://www.youtube.com/watch?v=XH5OW46yO8I&t=69s
+*/ 
+
 
 
 
