@@ -469,4 +469,4 @@ if (allEntries.length == 0 && localStorage.getItem('storedEntries') != null){
   }
 }
 
-// Note: the updating when changing from page to page not in function when we artificially code in entries for testing purposes  
+allEntries = []; 
