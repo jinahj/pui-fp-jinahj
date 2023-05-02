@@ -9,10 +9,10 @@
 :root {
   /* --color-primary: #f6aca2; */
   --color-primary: black; 
-  --color-secondary: #ff66cc;
-  --color-tertiary: #ff4dc4;
-  --color-quaternary: #ff19b3;
-  --color-quinary: #ff00aa;
+  --color-secondary: #FFAE42;
+  --color-tertiary: #FFA329;
+  --color-quaternary: #FF980F;
+  --color-quinary: #F58C00; 
 }
 
 .main-title {
