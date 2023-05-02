@@ -4,4 +4,4 @@
 
 ## Repository link: https://github.com/jinahj/pui-fp-jinahj
 
-## Demo link: https://www.youtube.com/watch?v=PSqP91oOBVo 
+## Demo link: https://youtu.be/SQg59ui6U7c
