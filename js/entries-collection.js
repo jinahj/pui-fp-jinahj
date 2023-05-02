@@ -1,6 +1,9 @@
 // retrieve from local storage and append each imte to the DOM
 
 let count = 0;
+const entriesArrayString = localStorage.getItem('openedEntries'); 
+const entriesArray = JSON.parse(entriesArrayString); 
+
 
 if (localStorage.getItem('openedEntries') != null){
   const containerElem = document.querySelector(".entries-box"); 
@@ -44,4 +47,24 @@ function openPopup(){
  
 function closePopup(){
   popup.classList.remove('open-popup');
+}
+
+const buttons = document.querySelectorAll(".keyword-box"); 
+
+const buttonPressed = e => {
+  const clickedEntry = e.target.getAttribute('value');
+  
+  // manipulate the popup 
+  let circle = document.querySelector('#circle'); 
+  circle.style.backgroundColor = entriesArray[clickedEntry].color; 
+
+  let date = document.querySelector('#date'); 
+  date.innerText = entriesArray[clickedEntry].date; 
+
+  let entryInformation = document.querySelector('#entry-info'); 
+  entryInformation.innerText = entriesArray[clickedEntry].content; 
+}
+
+for (let button of buttons){
+  button.addEventListener('click', buttonPressed); 
 }
