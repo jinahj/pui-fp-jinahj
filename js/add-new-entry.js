@@ -126,7 +126,6 @@ function clickPurple(){
 
 /*----------------------------------------------------------------------------*/
 
-// Date function 
 function getDate(){
   const date = new Date(); 
   let day = date.getDate(); 
@@ -176,7 +175,6 @@ class Entry{
   }
 
 }
-
 
 let checkSubmission = true; 
 
@@ -468,7 +466,6 @@ if (allEntries.length == 0 && localStorage.getItem('storedEntries') != null){
     allEntries.push(entry); 
   }
 }
-
 
 /* 
 Citations: 
