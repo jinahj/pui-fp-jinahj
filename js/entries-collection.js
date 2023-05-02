@@ -63,6 +63,7 @@ const buttonPressed = e => {
 
   let entryInformation = document.querySelector('#entry-info'); 
   entryInformation.innerText = entriesArray[clickedEntry].content; 
+  entryInformation.style.backgroundColor = entriesArray[clickedEntry].color; 
 }
 
 for (let button of buttons){
