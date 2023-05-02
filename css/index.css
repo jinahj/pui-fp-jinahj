@@ -110,7 +110,6 @@
 
 /* title animation */ 
 
-
 h1{
   margin: 0px; 
   font-family: 'Inter', sans-serif;
@@ -151,9 +150,11 @@ button:active{
 .nav-bar{
   display: flex; 
   height: 200px; 
-  gap: 50%; 
-  justify-content: center; 
+  justify-content: space-between; 
+  margin-left: 5%; 
+  margin-right: 5%; 
 }
+
 
 .button-container{
   justify-content: center; 
@@ -194,10 +195,10 @@ button:active{
 .entries-box{
   border: 5px solid black;
   margin-top: 10px; 
-  margin-left: 200px; 
-  margin-right: 200px; 
+  margin-left: 120px; 
+  margin-right: 120px; 
   border-radius: 40px; 
-  padding: 50px; 
+  padding: 34px; 
 }
 
 .display-past-entry{

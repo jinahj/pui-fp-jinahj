@@ -16,10 +16,11 @@ h2{
   color: black; 
 }
 
-h3{
+label{
   text-align: center; 
   font-size: 40px;
   font-family: 'Inter', sans-serif;
+  font-weight: bold;
 }
 
 button{
@@ -188,10 +189,10 @@ button:hover{
 
 .nav-bar{
   display: flex; 
-  height: 80px; 
-  gap: 50%; 
-  justify-content: center; 
-  padding-top: 50px; 
+  justify-content: space-between; 
+  padding-top: 50px;
+  margin-left: 5%; 
+  margin-right: 5%; 
 }
 
 
